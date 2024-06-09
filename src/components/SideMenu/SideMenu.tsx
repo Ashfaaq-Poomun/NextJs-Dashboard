@@ -6,10 +6,10 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import Person2Icon from "@mui/icons-material/Person2";
 import HomeIcon from "@mui/icons-material/Home";
-import EqualizerIcon from "@mui/icons-material/Equalizer";
 import { Settings } from "@mui/icons-material";
 import NextLink from "next/link";
 import scss from "./SideMenu.module.scss";
+import BuildIcon from "@mui/icons-material/Build";
 
 import {
   Divider,
@@ -48,10 +48,17 @@ const closedMixin = (theme: Theme): CSSObject => ({
   },
 });
 
-const menuRouteList = ["analytics", "profile", "setting", ""];
-const menuListTranslations = ["Analyics", "Profile", "Setting", "Sign Out"];
+const menuRouteList = ["", "rentals", "profile", "setting", ""];
+const menuListTranslations = [
+  "Dashboard",
+  "Rentals",
+  "Profile",
+  "Setting",
+  "Sign Out",
+];
 const menuListIcons = [
-  <EqualizerIcon />,
+  <HomeIcon />,
+  <BuildIcon />,
   <Person2Icon />,
   <Settings />,
   <ExitToAppIcon />,
