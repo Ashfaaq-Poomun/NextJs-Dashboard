@@ -1,0 +1,27 @@
+.divCircle {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.5rem;
+}
+
+.innerCirlcle {
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+  position: relative;
+}
+.outerCircle {
+  position: absolute;
+  background: #a9aaab;
+  border-radius: 50%;
+  height: calc(1.25rem / 2);
+  width: calc(1.25rem / 2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  border: 0.2rem solid #d1d5db;
+  border-radius: 2rem;
+  padding: 30px;
+}
